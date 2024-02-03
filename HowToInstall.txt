@@ -1,0 +1,24 @@
+//Si estás leyendo esto quiere decir que estás inciando con la configuración de tu entorno blockchain de "edu_tracking"
+// Felicidades por ser parte de los J5+1
+
+
+1. Obviamente ya clonaste esta cosa ve al paso siguiente....
+2. Asegúrate de tener instalado Node.js y npm (Node Package Manager) en tu máquina antes de comenzar.
+//en una terminal escribe Node
+//en una terminal escribe npm
+//Si te sale error en cualquiera de los dos preguntale a ChatGPT
+
+3.npm install -g truffle
+//Una vez instalado revisa el path de instalacion con:
+//npm list -g | Select-Object -First 1
+//***** Importante***  Asegúrate de que la ruta donde se instalan las herramientas de npm global esté incluida en tu variable de entorno PATH
+// prueba que ya está instalado con el comando "truffle" sino jaló reinicia tu lap despés de agregar a path
+
+4. instala Ganache
+npm install -g ganache-cli
+
+5. Ejecuta Ganache cli
+ganache-cli
+
+Nota: Ganache es una herramienta que proporciona un entorno de desarrollo Ethereum local
+Nota: truffle es una Herramienta de desarrollo y testing para Ethereum
