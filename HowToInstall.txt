@@ -22,3 +22,18 @@ ganache-cli
 
 Nota: Ganache es una herramienta que proporciona un entorno de desarrollo Ethereum local
 Nota: truffle es una Herramienta de desarrollo y testing para Ethereum
+
+6. Para probar la applicación requieres abrir una consola de truffle "truffle console"
+//const accounts = await web3.eth.getAccounts();
+//const cuentaSeleccionada = accounts[0];
+//web3.eth.defaultAccount = cuentaSeleccionada;
+
+7. Ahora si puedes interactuar con esa madre desde truffle
+const instancia = await TutoriaDescentralizada.deployed();
+
+// Por ejemplo, realiza una transacción con la cuenta seleccionada
+await instancia.registrarEstudiante("Nombre del Estudiante", { from: cuenta.address });
+
+const accounts = await web3.eth.getAccounts();
+const cuentaSeleccionada = accounts[0];
+web3.eth.defaultAccount = cuentaSeleccionada;
