@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract TutoriaDescentralizada {
+contract MentoriaDescentralizada {
     // Estructura de datos para representar a un estudiante
     struct Estudiante {
         address direccion;

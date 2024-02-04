@@ -22,3 +22,24 @@ ganache-cli
 
 Nota: Ganache es una herramienta que proporciona un entorno de desarrollo Ethereum local
 Nota: truffle es una Herramienta de desarrollo y testing para Ethereum
+
+
+6. inicia truffle: ******* Cuidado dile NO a todo truffle init
+Abre otra terminal y Migra los contratos a la red de Ganache
+truffle migrate --network development
+
+
+si todo está bien ya se puede interactuar con los contratos desde la consola de truffle:
+truffle console
+
+const accounts = await web3.eth.getAccounts();
+console.log(accounts);
+const PMD = artifacts.require("MentoriaDescentralizada");
+
+
+
+let instance = await MyContract.deployed();
+let result = await instance.miFuncion(); // Llama a una función del contrato
+console.log(result);
+
+console.log("Contrato TutoriaDescentralizada desplegado en:", instancia.address);
